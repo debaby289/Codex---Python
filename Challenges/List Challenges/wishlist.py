@@ -6,3 +6,10 @@ Create a list called wishlist and add three items to the list. Each item should 
 
 Print the wishlist to the terminal to see all your wishes in one place!
 '''
+wishlist = [
+  'A well-paying job',
+  'A house with 4 rooms',
+  'Happiness'
+]
+
+print(wishlist)
