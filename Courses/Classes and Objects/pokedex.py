@@ -25,8 +25,31 @@ Lastly, create three Pokemon class objects and use the .speak() or .display_deta
 For more information about any Pokémon you want to add, see the Pokédex!
 
 Are you ready to earn the next badge?
-
 Bonus: For all the super fans, try and add more attributes to the Pokemon class definition, like level, region, height, or weight.
 '''
 # Write code below 💖
 
+class Pokemon:
+    def __init__(self,entry,name,types,description,is_caught):
+        self.entry = entry
+        self.name = name
+        self.types = types
+        self.description = description
+        self.is_caught = is_caught
+
+    def speak(self):
+        print(f'{self.name} {self.name}')
+    
+    def caught(self):
+        if self.is_caught == True:
+            print(f'{self.name} has already been caught!')
+        else:
+            print(f'{self.name} has not been caught.')
+
+    def display_details(self):
+        print(f'Entry Number: {self.entry}\nName: {self.name}\nType: {self.types}\nDescription: {self.description}'),self.caught()
+    
+Eevee = Pokemon(25,'Eevee','Physical','Cute and Fluffy',True)
+
+Eevee.caught()
+Eevee.display_details()
